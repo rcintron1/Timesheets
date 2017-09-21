@@ -17,7 +17,7 @@ var dataMngr = {
     role: "",
     startDate: "",
     monthlyRate: ""
-  }
+  },
   addData: function() {
     var tmp = dataMngr.jsdata;
     tmp.ename = $("#ename").val();
@@ -25,7 +25,7 @@ var dataMngr = {
     tmp.startDate = $("#startDate").val();
     tmp.monthlyRate = $("#monthlyRate").val();
     database.ref().push(dataMngr.jsdata)
-  };
+  }
 }
 
 $(document).ready(function() {
@@ -33,7 +33,11 @@ $(document).ready(function() {
     // check for data validity
     // ****
     // end of data validity
+    dataMngr.addData();
 
+    for (var x in dataMngr.jsdata){
+      console.log(dataMngr.jsdata[x]);
+    }
 
   });
 });
