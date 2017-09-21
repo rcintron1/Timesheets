@@ -43,10 +43,10 @@ $(document).ready(function() {
 });
 
 
-database.ref().on("value", function(snapshot) {
-  console.log(snapshot.val());
-  $("").val(snapshot.val().trainName);
-  $("").val(snapshot.val().destination);
-  $("").val(snapshot.val().firstTrainTime);
-  $("").val(snapshot.val().frequency);
-});
+// database.ref().on("value", function(snapshot) {
+//   console.log(snapshot.val());
+//   $("").val(snapshot.val().trainName);
+//   $("").val(snapshot.val().destination);
+//   $("").val(snapshot.val().firstTrainTime);
+//   $("").val(snapshot.val().frequency);
+// });
