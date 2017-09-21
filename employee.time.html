@@ -12,7 +12,19 @@
         border-radius: 5px;
       }
       .panel {
-        border-color: blue;
+        border-color: lightgray;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        padding: 0;
+        border-bottom : 1px solid #ddd;
+      }
+      .panel-title {
+        font-size: 22px;
+        padding: 15px;
+        background-color:#f5f5f5;
       }
       .clear {
         clear: both;
@@ -26,33 +38,34 @@
     </style>
   </head>
   <body>
-    <div class="panel col-sm-10">
+    <div class="container-fluid">
+      <div class="panel">
       <div class="panel-heading"><h2 class="panel-title">Employee</h2></div>
-      <div class="panel-body">
-        <div class="form-group">
-          <label class=" left clear">Employee Name</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear">
-        </div>
-        <div class="form-group">
-          <label class=" left clear">Role</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="role"/>
-        </div>
-        <div class="form-group">
-          <label class=" left clear">Start Date(DD/MM/YY - ex: 09/20/17)</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="startDate"/>
-        </div>
-        <div class="form-group">
-          <label class="  left clear">Monthly Rate</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="monthlyRate"/></div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class=" left clear">Employee Name</label>
+            <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="ename"/>
+          </div>
+          <div class="form-group">
+            <label class=" left clear">Role</label>
+            <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="role"/>
+          </div>
+          <div class="form-group">
+            <label class=" left clear">Start Date(DD/MM/YY - ex: 09/20/17)</label>
+            <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="startDate"/>
+          </div>
+          <div class="form-group">
+            <label class="  left clear">Monthly Rate</label>
+            <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="monthlyRate"/>
+          </div>
         </div>
         <div class="panel-footer">
-          <button type="button" class="button-primary" id="btnSubmit">Add Employee</button>
+          <button type="button" class="btn btn-primary" id="btnSubmit">Add Employee</button>
         </div>
       </div>
-
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <script type="text/javascript" src="app.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="app.js"></script>
 
