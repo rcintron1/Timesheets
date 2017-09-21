@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-      .container {
-        display: inline-block;
-        min-height: 25%;
-        border: 1px solid gray;
-        border-radius: 5px;
-      }
-      .panel {
-        border-color: blue;
-      }
-      .clear {
-        clear: both;
-      }
-      .left {
-        float: left;
-      }
-      .blue {
-        background-color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="panel col-sm-10">
-      <div class="panel-heading"><h2 class="panel-title">Employee</h2></div>
-      <div class="panel-body">
-        <div class="form-group">
-          <label class=" left clear">Employee Name</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear">
-        </div>
-        <div class="form-group">
-          <label class=" left clear">Role</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="role"/>
-        </div>
-        <div class="form-group">
-          <label class=" left clear">Start Date(DD/MM/YY - ex: 09/20/17)</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="startDate"/>
-        </div>
-        <div class="form-group">
-          <label class="  left clear">Monthly Rate</label>
-          <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="monthlyRate"/></div>
-        </div>
-        <div class="panel-footer">
-          <button type="button" class="button-primary" id="btnSubmit">Add Employee</button>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    .container {
+      display: inline-block;
+      min-height: 25%;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    .panel {
+      border-color: blue;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="panel col-sm-10">
+    <div class="panel-heading">
+      <h2 class="panel-title">Employee</h2></div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class=" left clear">Employee Name</label>
+        <input type="text" name="" value="" class="col-sm-6 form-control  left clear">
       </div>
+      <div class="form-group">
+        <label class=" left clear">Role</label>
+        <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="role" />
+      </div>
+      <div class="form-group">
+        <label class=" left clear">Start Date(DD/MM/YY - ex: 09/20/17)</label>
+        <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="startDate" />
+      </div>
+      <div class="form-group">
+        <label class="  left clear">Monthly Rate</label>
+        <input type="text" name="" value="" class="col-sm-6 form-control  left clear" id="monthlyRate" /></div>
+    </div>
+    <div class="panel-footer">
+      <button type="button" class="button-primary" id="btnSubmit">Add Employee</button>
+    </div>
+  </div>
 
 
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 
-  </body>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
 </html>
